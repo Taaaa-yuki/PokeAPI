@@ -11,7 +11,6 @@ public class Main {
         
         // コマンドライン引数からポケモンIDを取得する
         int pokemonId = Integer.parseInt(args[0]);
-        System.out.println("Pokemon ID: " + pokemonId);
 
         // PokeAPIからポケモン情報を取得するためのURL
         String url = "https://pokeapi.co/api/v2/pokemon/" + pokemonId;
@@ -21,8 +20,8 @@ public class Main {
         PokemonModel pokemon = pokemonApi.request(url);
 
         // 取得したポケモン情報を表示する
-        System.out.println(pokemon.getId());
-        System.out.println(pokemon.getName());
-        System.out.println(pokemon.getType());
+        System.out.println("Pokemon ID  :  " + pokemon.getId());
+        System.out.println("Pokemon NAME:  " + pokemon.getName());
+        System.out.println("Pokemon TYPE:  " + pokemon.getType());
     }
 }

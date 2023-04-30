@@ -22,4 +22,16 @@ public class PokemonModel {
     public String getType() {
         return type;
     }
+
+    public void setId() {
+        this.id = id;
+    }
+
+    public void setName() {
+        this.name = name;
+    }
+
+    public void setType() {
+        this.type = type;
+    }
 }

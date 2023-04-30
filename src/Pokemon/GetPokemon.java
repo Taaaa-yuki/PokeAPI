@@ -36,11 +36,11 @@ public class GetPokemon implements PokeApi {
         for (JsonElement type : types) {
             JsonObject typeObj = type.getAsJsonObject();
             String typeName = typeObj.get("type").getAsJsonObject().get("name").getAsString();
-            typeBuilder.append(typeName).append(" ");
+            typeBuilder.append(typeName).append("pokemon");
         }
         String type = typeBuilder.toString().trim();
 
-        PokemonModel pokemon = new PokemonModel(id, name, type);
-        return pokemon;
+        PokemonModel currentPokemon = new PokemonModel(id, name, type);
+        return currentPokemon;
     }
 }
