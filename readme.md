@@ -1,8 +1,8 @@
 # PokeAPI
 
-PokeAPIは、ポケモンの情報を取得するJavaアプリケーションです。
+PokeAPI is a Java application that retrieves Pokemon information.
 
-## ディレクトリ構造
+## Directory structure
 
 ``` tree
 PokeAPI
@@ -23,16 +23,16 @@ PokeAPI
         └── PokemonModel.java
 ```
 
-## 使用方法
+## Usage
 
-以下のコマンドを実行して、ポケモンの情報を取得してください。
+Execute the following command to obtain Pokémon information.
 
 ``` bash
 javac -d bin -cp lib/gson-2.8.9.jar src/Main.java src/Pokemon/GetPokemon.java src/Pokemon/PokeApi.java src/Pokemon/PokemonModel.java
 java -cp bin:lib/gson-2.8.9.jar Main <pokemon_id>
 ```
 
-## 参考文献
+### References
 
-- [PokeAPI公式サイト](https://pokeapi.co/)
-- [Gsonライブラリ公式ドキュメント](https://github.com/google/gson/blob/master/UserGuide.md)
+- [PokeAPI official website](https://pokeapi.co/)
+- [Gson Library Official Documentation](https://github.com/google/gson/blob/master/UserGuide.md)
